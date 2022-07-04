@@ -11,7 +11,7 @@ const Layout = ({main}) => {
 
 
   const handleLogoutClick=()=>{
-    console.log('hi, in logout')
+
 
     firebase.auth().signOut().then(()=>{
       router.push('/');
@@ -23,8 +23,7 @@ const Layout = ({main}) => {
 
   useEffect(()=>{
 
-    console.log('in layout ');
-    console.log(authenticated);
+    
     authenticated?console.log('is true'):console.log('is false')
 
   },[])

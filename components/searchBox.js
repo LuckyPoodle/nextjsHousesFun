@@ -23,8 +23,7 @@ const SearchBox = ({onSelectAddress,defaultValue}) => {
     loader
     .load()
     .then((google) => {
-      console.log('load in searchbox ');
-      console.log(google);
+   
       setLoaded(true);
     
     })

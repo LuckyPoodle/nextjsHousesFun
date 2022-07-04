@@ -8,8 +8,7 @@ export default function Auth(){
 }
 
 export async function getServerSideProps({req,res}){
-    console.log(req);
-    console.log("...................");
+  
     const uid=await loadIdToken(req);
 
     if (uid){
